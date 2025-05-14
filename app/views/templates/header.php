@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cosméticos Mia Traba</title>
+  <title>Inicio ByTex</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <!-- FontAwesome -->
@@ -13,22 +13,18 @@
 <body>
   <header>
     <div class="container">
-      <h1 class="logo">Mia Traba</h1>
-      <nav class="mega-menu">
-        <ul>
+      <h1 class="logo">ByTex</h1>
+      <nav class="navbar">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+        <ul class="nav-links">
           <li><a href="#">Inicio</a></li>
-          <li class="has-sub">
-            <a href="#">Productos <i class="fa fa-caret-down"></i></a>
-            <div class="sub-menu">
-              <ul>
-                <li><a href="#">Rostro</a></li>
-                <li><a href="#">Ojos</a></li>
-                <li><a href="#">Labios</a></li>
-                <li><a href="#">Uñas</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Acerca de</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
       </nav>
