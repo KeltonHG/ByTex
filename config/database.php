@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('America/Lima');
 $host = 'localhost';
-$db   = 'cosmeticos';
+$db   = 'bytexdb';
 $user = 'root';
 $pass = '';
 $charset = 'utf8mb4';
