@@ -17,10 +17,3 @@ CREATE TABLE productos (
 );
 ```
 
-```bash
-# Para ejecutar:
-# 1. Clonar en htdocs (XAMPP) o www (Laragon)
-# 2. Crear BD y ejecutar script SQL.
-# 3. Copiar imágenes en /public/img/
-# 4. Abrir http://localhost/mi-cosmeticos-mega/public
-```
