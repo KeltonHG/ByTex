@@ -8,4 +8,5 @@ switch ($route) {
     $controller = new HomeController();
     $controller->index();
     break;
+    //ELPEPEPEPEPEPEPEPEP
 }
