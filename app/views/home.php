@@ -1,23 +1,41 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Inicio | Mi E-Commerce</title>
-  <link rel="stylesheet" href="/public/css/style.css">
-</head>
-<body>
+<?php include 'templates/header.php'; ?>
 
-<?php include 'partials/header.php'; ?>
-<?php include 'partials/menu.php'; ?>
+<!-- Hero Banner -->
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h2>Descubre tu Belleza Interior</h2>
+    <p>Pruébalos ahora y transforma tu estilo</p>
+    <a href="#featured" class="btn-primary">Pruébalos aquí</a>
+  </div>
+</section>
 
-<main>
-  <h2>Bienvenido a nuestra tienda en línea</h2>
-  <p>Aquí encontrarás los mejores productos a los mejores precios.</p>
-</main>
+<!-- Featured Products Slider -->
+<section id="featured" class="featured-products">
+  <h3>Productos Destacados</h3>
+  <div class="slider">
+    <?php foreach ($featured as $prod): ?>
+      <div class="slide">
+        <img src="/img/<?php echo $prod['imagen']; ?>" alt="<?php echo $prod['nombre']; ?>">
+        <h4><?php echo $prod['nombre']; ?></h4>
+        <span class="price">S/<?php echo $prod['precio']; ?></span>
+      </div>
+    <?php endforeach; ?>
+  </div>
+</section>
 
-<?php include 'partials/footer.php'; ?>
+<!-- All Products Grid -->
+<section class="productos">
+  <?php foreach ($productos as $producto): ?>
+    <div class="producto">
+      <img src="/img/<?php echo $producto['imagen']; ?>" alt="<?php echo $producto['nombre']; ?>">
+      <h2><?php echo $producto['nombre']; ?></h2>
+      <p><?php echo $producto['descripcion']; ?></p>
+      <span class="precio">S/<?php echo $producto['precio']; ?></span>
+    </div>
+  <?php endforeach; ?>
+</section>
 
-</body>
-</html>
+<?php include 'templates/footer.php'; ?>
 
 
